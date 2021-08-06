@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-color: #ADADAD;
+}
+
+
+/* Colors 
+    1. #2E1114 -- Dark red --towards brown
+    2. #501B1D -- faded red
+    3. #64485C -- faded purple -- little darkish
+    4. #83677B -- faded lighter purple
+    5. #ADADAD -- very light gray
+    6. #d4d3d3 -- almost white -- for text
+*/
+
+#navbar__top {
+    width: 100%;
+    /* height: 8vh; */
+    background-color: #2E1114;
+}
+
+.navbar1__main__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 6vw;
+    color: #d4d3d3;
+}
+
+.navbar1__heading__div {
+    /* align-self: center; */
+    align-items: center;
+}
+
+.navbar1__heading {
+    font-family: 'Style Script', cursive;
+    letter-spacing: 1.78px;
+    font-size: 125%;
+    font-weight: 500;
+}
+
+
+/* .navbar1__list__div {} */
+
+.navbar1__main__div .navbar1__list__div .navbar1__li {
+    float: left;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2vw;
+}
+
+.navbar1__main__div .navbar1__list__div .navbar1__li a {
+    text-decoration: none;
+    font-size: 90%;
+    color: white;
+}
