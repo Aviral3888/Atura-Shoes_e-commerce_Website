@@ -19,6 +19,15 @@ body {
     6. #d4d3d3 -- almost white -- for text
 */
 
+
+/* 
+#############################################
+---------------------------------------------
+                NAVBAR TOP
+---------------------------------------------
+############################################# 
+*/
+
 #navbar__top {
     width: 100%;
     /* height: 8vh; */
@@ -62,10 +71,19 @@ body {
     color: white;
 }
 
+
+/* 
+#############################################
+---------------------------------------------
+            LOGO & NAME SECTION
+---------------------------------------------
+############################################# 
+*/
+
 #logo__section__main__div {
     width: 100%;
     height: 15vh;
-    /* background-color: #2E1144; */
+    background-color: #beafba;
     border-bottom: 2px solid #2E1114;
 }
 
@@ -73,14 +91,40 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.logo__image__div {
+    margin-top: 1em;
 }
 
 .logo__image__div img {
-    width: 100px;
-    height: 100px;
+    width: 6vw;
+    height: 6vw;
 }
 
-.logo__text__div {}
+.logo__text__div {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo__text__div .logo__main__heading {
+    font-size: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2E1114;
+}
+
+.logo__text__div .logo__sub__heading {
+    font-size: 90%;
+    margin-top: 1vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #53141b;
+}
+
+.logo__image__duplicate {
+    opacity: 0;
+}
 
 
 /* Responsive  */
@@ -105,6 +149,22 @@ body {
     }
     .navbar1__main__div .navbar1__list__div .navbar1__li a {
         font-size: 80%;
+    }
+    /* Logo Section */
+    .logo__image__div img {
+        width: 9vw;
+        height: 9vw;
+    }
+    .logo__text__div .logo__main__heading {
+        font-size: 180%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #2E1114;
+    }
+    .logo__text__div .logo__sub__heading {
+        font-size: 80%;
+        margin-top: 1vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #53141b;
     }
 }
 
