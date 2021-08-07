@@ -50,7 +50,7 @@ body {
 /* .navbar1__list__div {} */
 
 .navbar1__main__div .navbar1__list__div .navbar1__li {
-    float: left;
+    float: right;
     list-style: none;
     font-family: 'Roboto', sans-serif;
     padding-left: 2vw;
@@ -60,4 +60,47 @@ body {
     text-decoration: none;
     font-size: 90%;
     color: white;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width:1440px) {
+    /* Navbar */
+    .navbar1__main__div {
+        padding: 0 10vw;
+    }
+    .navbar1__heading {
+        font-size: 130%;
+    }
+    .navbar1__main__div .navbar1__list__div .navbar1__li a {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* Navbar */
+    .navbar1__heading {
+        font-size: 100%;
+    }
+    .navbar1__main__div .navbar1__list__div .navbar1__li a {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    /* Navbar */
+    #navbar__top {
+        display: block;
+    }
+    .navbar1__main__div {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar1__heading__div {
+        padding-top: 2vh;
+    }
+    .navbar1__list__div {
+        display: none;
+    }
 }
