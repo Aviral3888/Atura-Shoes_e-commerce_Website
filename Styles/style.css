@@ -82,7 +82,7 @@ body {
 
 #logo__section__main__div {
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     background-color: #beafba;
     border-bottom: 2px solid #2E1114;
 }
@@ -96,12 +96,12 @@ body {
 }
 
 .logo__image__div {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .logo__image__div img {
     width: 6vw;
-    height: 6vw;
+    height: auto;
 }
 
 .logo__text__div {
@@ -110,16 +110,37 @@ body {
 }
 
 .logo__text__div .logo__main__heading {
-    font-size: 200%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 220%;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1.5px;
     color: #2E1114;
+}
+
+.logo__text__div .logo__main__heading:hover {
+    cursor: pointer;
 }
 
 .logo__text__div .logo__sub__heading {
     font-size: 90%;
     margin-top: 1vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #53141b;
+    letter-spacing: 3px;
+    color: rgb(139, 56, 8);
+}
+
+.logo__text__div .logo__main__heading:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    transition: width .5s ease, border-bottom .5s ease;
+}
+
+.logo__text__div .logo__main__heading:hover:after {
+    width: 60%;
+    border-bottom: 2px solid rgb(70, 22, 22);
 }
 
 .logo__image__duplicate {
@@ -127,60 +148,33 @@ body {
 }
 
 
-/* Responsive  */
+/* 
+#############################################
+---------------------------------------------
+            LOGO & NAME SECTION
+---------------------------------------------
+############################################# 
+*/
 
-@media screen and (max-width:1440px) {
-    /* Navbar */
-    .navbar1__main__div {
-        padding: 0 10vw;
-    }
-    .navbar1__heading {
-        font-size: 130%;
-    }
-    .navbar1__main__div .navbar1__list__div .navbar1__li a {
-        font-size: 100%;
-    }
+#navbar__main {
+    width: 100%;
+    height: 10vh;
+    background-color: #5c1f25;
 }
 
-@media screen and (max-width:768px) {
-    /* Navbar */
-    .navbar1__heading {
-        font-size: 100%;
-    }
-    .navbar1__main__div .navbar1__list__div .navbar1__li a {
-        font-size: 80%;
-    }
-    /* Logo Section */
-    .logo__image__div img {
-        width: 9vw;
-        height: 9vw;
-    }
-    .logo__text__div .logo__main__heading {
-        font-size: 180%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #2E1114;
-    }
-    .logo__text__div .logo__sub__heading {
-        font-size: 80%;
-        margin-top: 1vh;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: #53141b;
-    }
+.navbar2__main__div {
+    padding: 25px 6vw;
 }
 
-@media screen and (max-width:426px) {
-    /* Navbar */
-    #navbar__top {
-        display: block;
-    }
-    .navbar1__main__div {
-        display: flex;
-        flex-direction: column;
-    }
-    .navbar1__heading__div {
-        padding-top: 2vh;
-    }
-    .navbar1__list__div {
-        display: none;
-    }
+.navbar2__main__div ul li {
+    display: block;
+    float: left;
+    margin-right: 5vw;
+    list-style: none;
+}
+
+.navbar2__main__div ul li a {
+    text-decoration: none;
+    color: #ADADAD;
+    font-family: Roboto;
 }
