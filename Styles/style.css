@@ -163,7 +163,7 @@ body {
 }
 
 .navbar2__main__div {
-    padding: 25px 6vw;
+    padding: 23px 6vw;
 }
 
 .navbar2__main__div ul li {
@@ -175,6 +175,28 @@ body {
 
 .navbar2__main__div ul li a {
     text-decoration: none;
-    color: #ADADAD;
+    color: #d4d3d3;
     font-family: Roboto;
+    padding: 10px 10px;
+    border-radius: 3px;
+    transition: background-color .5s ease, color .2s ease, padding 0.2s ease;
 }
+
+.navbar2__main__div ul li a:hover {
+    background-color: #d4d3d3;
+    font-weight: bold;
+    color: #5c1f25;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.navbar2__main__div .active {
+    background-color: #b4b2b2;
+    font-weight: bold;
+    color: #5c1f25;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+
+/* transition: width .5s ease, border-bottom .5s ease; */
