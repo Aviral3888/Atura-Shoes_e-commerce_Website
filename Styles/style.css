@@ -228,3 +228,28 @@ body {
     border: 2px solid black;
     height: 480px;
 }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .8
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+    to {
+        opacity: 1
+    }
+}
