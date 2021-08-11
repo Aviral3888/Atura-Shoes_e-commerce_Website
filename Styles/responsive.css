@@ -14,25 +14,87 @@
 }
 
 @media screen and (max-width:768px) {
-    /* Navbar */
+    /*
+    #########################################
+                    Navbar
+    #########################################
+    */
     .navbar1__heading {
         font-size: 100%;
     }
     .navbar1__main__div .navbar1__list__div .navbar1__li a {
         font-size: 80%;
     }
-    /* Logo Section */
+    /*
+    #########################################
+                Logo Section
+    #########################################
+    */
     .logo__div__container {
         padding: 0 10vw;
     }
     .logo__image__div img {
-        width: 9vw;
-        height: 9vw;
+        width: 11vw;
+        height: auto;
     }
     .logo__text__div .logo__main__heading {
         font-size: 180%;
     }
     .logo__text__div .logo__sub__heading {
+        font-size: 80%;
+    }
+    /*
+    #########################################
+               MENU NAVBAR
+    #########################################
+    */
+    .navbar2__main__div ul li a {
+        font-size: 70%;
+    }
+    /*
+    #########################################
+               SLIDER  NAVBAR
+    #########################################
+    */
+    #slider__section__main__div {
+        width: 100%;
+        height: 55vh;
+    }
+    .slider__container img {
+        height: 45vh;
+    }
+    /*
+    #########################################
+               PRODUCTS  SECTION
+    #########################################
+    */
+    .products__container {
+        /* flex-direction: column; */
+        display: block;
+        margin: 2vh 15vw;
+    }
+    .product {
+        padding: 10px;
+        text-align: center;
+        /* background-color: rgb(230, 222, 222); */
+        background-image: linear-gradient( rgb(197, 194, 194), white, rgb(197, 194, 194), white, rgb(197, 194, 194));
+        border: 2px solid #5c1f25;
+        margin-bottom: 20px;
+    }
+    .products__container .product img {
+        width: 45vw;
+        height: 30vh;
+        margin: 5px;
+    }
+    /*
+    #########################################
+               FOOTER  SECTION
+    #########################################
+    */
+    .footer__content {
+        font-size: 70%;
+    }
+    .part3 p a {
         font-size: 80%;
     }
 }
@@ -51,5 +113,24 @@
     }
     .navbar1__list__div {
         display: none;
+    }
+}
+
+
+/* Some Other Dimensions */
+
+@media screen and (max-width:940px) {
+    .navbar2__main__div ul li a {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    #slider__section__main__div {
+        width: 100%;
+        height: 55vh;
+    }
+    .slider__container img {
+        height: 45vh;
     }
 }
