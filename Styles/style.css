@@ -78,6 +78,15 @@ body {
     text-decoration: none;
     font-size: 90%;
     color: white;
+    padding: 3px 6px;
+    border: 2px solid transparent;
+}
+
+.navbar1__main__div .navbar1__list__div .navbar1__li a:hover {
+    color: black;
+    background-color: rgb(187, 185, 185);
+    border-radius: 3px;
+    padding: 3px 6px;
 }
 
 

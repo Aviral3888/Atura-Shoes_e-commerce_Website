@@ -1,3 +1,15 @@
-.createAccount__home__link:hover {
-    color: white;
+.createAccount__navbar {
+    position: fixed;
+}
+
+.first__child {
+    background-color: tomato;
+    border-radius: 3px;
+    padding: 2px 0px;
+}
+
+.section__main {
+    width: 100%;
+    height: 120vh;
+    background-color: teal;
 }
