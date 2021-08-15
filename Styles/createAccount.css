@@ -146,3 +146,33 @@
     /* img {
         width: 100%;
     } */
+    
+    .section__two__content {
+        margin: 16vh 5vw 0 5vw;
+        color: #c7c9ca;
+        font-family: 'Baloo 2', cursive;
+    }
+    
+    .section__two__content h2 {
+        font-size: 120%;
+        color: rgb(204, 202, 202);
+        width: 90%;
+        border-bottom: 2px solid gray;
+        padding-bottom: 1vh;
+        margin-bottom: 3vh;
+    }
+    
+    .section__two__content p {
+        font-size: 70%;
+    }
+    
+    .section__two__content p a {
+        font-size: 110%;
+        margin: 0 5px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .section__two__content p a:hover {
+        color: rgb(204, 202, 202);
+    }
