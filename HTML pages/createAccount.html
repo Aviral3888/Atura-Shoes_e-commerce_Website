@@ -9,6 +9,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Style+Script&display=swap&family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../Styles/style.css">
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-
+    <!-- 
     <section id="section1">
         <nav id="navbar__top" class="createAccount__navbar">
             <div class="navbar1__main__div">
@@ -42,13 +43,62 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </section> -->
 
-    <section id="section2">
-        <div class="section__main">
-
+    <section class="section" id="background__area">
+        <div class="main__back__div">
+            <div class="div__one"></div>
+            <div class="div__two"></div>
         </div>
     </section>
+
+    <section class="section" id="create__page">
+        <div class="main__create__area">
+            <div class="div__one__account">
+                <div class="signup__content__background">
+                    <div class="signup-heading">
+                        <h2>Create an Account</h2>
+                    </div>
+                    <form name="myform" action="" method="" onsubmit="return validateform()">
+                        <div class="form-group">
+                            <label for="name">Username:</label><br>
+                            <input type="text" name="name" id="name" placeholder="Enter your Name"><span id="nameerror"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="email" id="email" placeholder="Enter your Email"><span id="emailerror"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label><br>
+                            <input type="password" name="pass" id="pass" placeholder="Enter your password"><span id="passerror"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Re-Enter Password:</label><br>
+                            <input type="password" name="pass1" id="pass1" placeholder="Enter your password again"><span id="passerror1"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Country:</label><br>
+                            <input type="text" name="country" id="country" placeholder="Enter your Country"><span id="countryerror"></span>
+                        </div>
+                        <div class="btn">
+                            <button type="submit" value="Submit" id="Submit" class="signup__confirm">Sign Up</button>
+                            <button class="signup__cancel"><a href="../index.html">Cancel</a></button>
+                        </div>
+                </div>
+            </div>
+            <div class="div__two__account">
+                <div class="section__two__content">
+                    <h2>
+                        Welcome to Ature
+                    </h2>
+                    <p>We provide our customers with a wide variety of shoes from different categories. Formals, Sports and Casuals are our best sections. <br> Have a look into our <a href="#"> Sections</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

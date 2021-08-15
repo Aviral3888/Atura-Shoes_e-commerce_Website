@@ -1,4 +1,4 @@
-.createAccount__navbar {
+    /* .createAccount__navbar {
     position: fixed;
 }
 
@@ -13,3 +13,136 @@
     height: 120vh;
     background-color: teal;
 }
+ */
+    /* Background */
+    
+    #background__area {
+        position: relative;
+    }
+    
+    .main__back__div {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .main__back__div .div__one {
+        background-color: #F4F6F9;
+        width: 50%;
+        height: 100vh;
+    }
+    
+    .main__back__div .div__two {
+        background-color: #1C3B68;
+        width: 50%;
+        height: 100vh;
+    }
+    
+    #create__page {
+        width: 80%;
+        height: 80vh;
+        background-color: white;
+        position: absolute;
+        top: 10vh;
+        left: 10%;
+    }
+    
+    .main__create__area {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    
+    .main__create__area .div__one__account {
+        box-shadow: 0px 0px 30px #8b8a8a;
+        background-color: #F4F6F9;
+        width: 50%;
+    }
+    
+    .main__create__area .div__two__account {
+        box-shadow: 0px 0px 30px #131212;
+        background-color: #1C3B68;
+        background-image: url(../Images/signup_bagg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+    
+    .signup__content__background {
+        background-color: white;
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        padding: 30px;
+    }
+    
+    .signup-heading {
+        text-align: center;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: 'Baloo 2', cursive;
+        margin-bottom: 2vh;
+    }
+    
+    label {
+        font-family: 'Baloo 2', cursive;
+        font-size: 90%;
+    }
+    
+    input {
+        margin-bottom: 1vh;
+        border: 1px solid rgb(209, 208, 208);
+        border-radius: 3px;
+    }
+    
+    input::placeholder {
+        font-family: 'Baloo 2', cursive;
+        font-size: 70%;
+        padding: 0 0 0 20px;
+        color: rgb(180, 179, 179);
+    }
+    
+    .btn {
+        margin-top: 2vh;
+    }
+    
+    button {
+        width: 49%;
+        /* background-color: rgb(27, 27, 82); */
+        border: none;
+        border-radius: 3px;
+        height: 30px;
+    }
+    
+    .signup__confirm {
+        background-color: rgb(204, 12, 44);
+        color: white;
+        cursor: pointer;
+        font-size: 80%;
+    }
+    
+    .signup__confirm:hover {
+        background-color: rgb(116, 7, 25);
+    }
+    
+    .signup__cancel {
+        border: 2px solid rgb(204, 12, 44);
+    }
+    
+    .signup__cancel a {
+        text-decoration: none;
+        color: rgb(204, 12, 44);
+        background-color: npn;
+        border-radius: 3px;
+        height: 30px;
+        font-size: 80%;
+    }
+    
+    .signup__cancel:hover {
+        background-color: rgb(204, 12, 44);
+    }
+    
+    .signup__cancel a:hover {
+        color: rgb(247, 245, 245);
+    }
+    /* img {
+        width: 100%;
+    } */
