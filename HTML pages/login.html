@@ -19,24 +19,46 @@
     <title>Create Account</title>
 
     <style>
-        .login__link {
-            margin-top: 10px;
-            margin-bottom: -20px;
+        button {
+            width: 100%;
+            margin-bottom: 10px;
         }
         
-        .login__link a {
+        .signup__cancel:hover {
+            background-color: white;
+        }
+        
+        .signup__cancel a:hover {
+            color: rgb(204, 12, 44);
+            font-weight: bold;
+        }
+        
+        .main__create__area .div__two__account {
+            box-shadow: 0px 0px 30px #131212;
+            background-color: #1C3B68;
+            background-image: url(../Images/login__bg1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50%;
+        }
+        
+        .extra__group {
+            margin-top: 3vh;
+        }
+        
+        .signup__label a {
             text-decoration: none;
-            color: gray;
-            font-family: 'Baloo 2', cursive;
-            font-size: 80%;
-            padding: 0px 8px;
+            color: #000000;
+            background-color: #c0bdbd;
+            border: 2px solid #64485C;
+            padding: 0 8px;
+            border-radius: 5px;
         }
         
-        .login__link a:hover {
-            color: black;
-            background-color: rgb(190, 187, 187);
-            padding: 0px 8px;
-            border-radius: 10px;
+        .signup__label a:hover {
+            color: white;
+            background-color: #861f1f;
+            border: transparent;
         }
     </style>
 
@@ -79,13 +101,10 @@
             <div class="div__one__account">
                 <div class="signup__content__background">
                     <div class="signup-heading">
-                        <h2>Create an Account</h2>
+                        <h2>Login Account </h2>
                     </div>
                     <form name="myform" action="" method="" onsubmit="return validateform()">
-                        <div class="form-group">
-                            <label for="name">Username:</label><br>
-                            <input type="text" name="name" id="name" placeholder="Enter your Name"><span id="nameerror"></span>
-                        </div>
+
                         <div class="form-group">
                             <label for="email">Email:</label><br>
                             <input type="email" name="email" id="email" placeholder="Enter your Email"><span id="emailerror"></span>
@@ -94,22 +113,17 @@
                             <label for="password">Password:</label><br>
                             <input type="password" name="pass" id="pass" placeholder="Enter your password"><span id="passerror"></span>
                         </div>
-                        <div class="form-group">
-                            <label for="password">Re-Enter Password:</label><br>
-                            <input type="password" name="pass1" id="pass1" placeholder="Enter your password again"><span id="passerror1"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Country:</label><br>
-                            <input type="text" name="country" id="country" placeholder="Enter your Country"><span id="countryerror"></span>
-                        </div>
+
                         <div class="btn">
-                            <button type="submit" value="Submit" id="Submit" class="signup__confirm">Sign Up</button>
+                            <button type="submit" value="Submit" id="Submit" class="signup__confirm">Login</button>
                             <button class="signup__cancel"><a href="../index.html">Cancel</a></button>
                         </div>
-                        <div class="form-group">
-                            <p class="login__link"> <a href="./login.html">Login Account</a> </p>
+                        <div class="form-group extra__group">
+                            <label for="email" class="signup__label"><a href="./createAccount.html">Sign Up</a></label>
                         </div>
                 </div>
+
+
             </div>
             <div class="div__two__account">
                 <div class="section__two__content">
@@ -126,29 +140,17 @@
 
     <script>
         function validateform() {
-            let name = document.myform.name.value;
             let email = document.myform.email.value;
             let pass = document.myform.pass.value;
-            let pass1 = document.myform.pass1.value;
-            let country = document.myform.country.value;
 
-            if (name == "" || name == null) {
-                alert("Invalid UserName");
-                return false;
-            } else if (email == "" || email == null) {
+            if (email == "" || email == null) {
                 alert("Invalid Email");
                 return false;
             } else if (pass.length < 6) {
                 alert("Password MUST contain at-least than 6 characters");
                 return false;
-            } else if (pass !== pass1) {
-                alert('Your Passwords does not match. Enter again.');
-                return false;
-            } else if (country == "" || country == null) {
-                alert('Please enter the Name of Your Country');
-                return false;
             } else {
-                alert('Account Created Successfully. Welcome to Ature');
+                alert('Login Successful. Welcome to Ature');
                 return true;
             }
 
