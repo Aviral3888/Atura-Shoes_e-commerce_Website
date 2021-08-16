@@ -99,6 +99,36 @@
         </div>
     </section>
 
+    <script>
+        function validateform() {
+            let name = document.myform.name.value;
+            let email = document.myform.email.value;
+            let pass = document.myform.pass.value;
+            let pass1 = document.myform.pass1.value;
+            let country = document.myform.country.value;
+
+            if (name == "" || name == null) {
+                alert("Invalid UserName");
+                return false;
+            } else if (email == "" || email == null) {
+                alert("Invalid Email");
+                return false;
+            } else if (pass.length < 6) {
+                alert("Password MUST contain at-least than 6 characters");
+                return false;
+            } else if (pass !== pass1) {
+                alert('Your Passwords does not match. Enter again.');
+                return false;
+            } else if (country == "" || country == null) {
+                alert('Please enter the Name of Your Country');
+                return false;
+            } else {
+                alert('Account Created Successfully. Welcome to Ature');
+                return true;
+            }
+
+        }
+    </script>
 </body>
 
 </html>

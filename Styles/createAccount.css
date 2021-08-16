@@ -91,6 +91,9 @@
         margin-bottom: 1vh;
         border: 1px solid rgb(209, 208, 208);
         border-radius: 3px;
+        font-family: 'Baloo 2', cursive;
+        padding-left: 5px;
+        color: rgb(85, 84, 84);
     }
     
     input::placeholder {
@@ -105,7 +108,7 @@
     }
     
     button {
-        width: 49%;
+        width: 48%;
         /* background-color: rgb(27, 27, 82); */
         border: none;
         border-radius: 3px;
@@ -175,4 +178,33 @@
     
     .section__two__content p a:hover {
         color: rgb(204, 202, 202);
+    }
+    /* RESPONSIVE */
+    
+    @media screen and (max-width: 1100px) {
+        .signup__content__background {
+            background-color: white;
+            position: absolute;
+            top: 5vh;
+            left: 5vw;
+            padding: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 901px) {
+        .signup__content__background {
+            background-color: white;
+            position: absolute;
+            top: 5vh;
+            left: 2vw;
+            padding: 30px;
+        }
+    }
+    
+    @media screen and (max-width:800px) {
+        .main__create__area {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
     }
