@@ -42,23 +42,24 @@
             width: 50%;
         }
         
-        .extra__group {
-            margin-top: 3vh;
+        .login__link {
+            margin-top: 10px;
+            margin-bottom: -20px;
         }
         
-        .signup__label a {
+        .login__link a {
             text-decoration: none;
-            color: #000000;
-            background-color: #c0bdbd;
-            border: 2px solid #64485C;
-            padding: 0 8px;
-            border-radius: 5px;
+            color: gray;
+            font-family: 'Baloo 2', cursive;
+            font-size: 80%;
+            padding: 0px 8px;
         }
         
-        .signup__label a:hover {
-            color: white;
-            background-color: #861f1f;
-            border: transparent;
+        .login__link a:hover {
+            color: black;
+            background-color: rgb(190, 187, 187);
+            padding: 0px 8px;
+            border-radius: 10px;
         }
     </style>
 
@@ -118,8 +119,8 @@
                             <button type="submit" value="Submit" id="Submit" class="signup__confirm">Login</button>
                             <button class="signup__cancel"><a href="../index.html">Cancel</a></button>
                         </div>
-                        <div class="form-group extra__group">
-                            <label for="email" class="signup__label"><a href="./createAccount.html">Sign Up</a></label>
+                        <div class="form-group">
+                            <p class="login__link"> <a href="./createAccount.html">Create Account</a> </p>
                         </div>
                 </div>
 
