@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#section {
+    width: 100%;
+    background-image: linear-gradient(to right, #766FFE, #89F0FF);
+    position: relative;
+}
+
+.main__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 130%;
+    color: rgb(250, 231, 187);
+    font-weight: 500;
+}
+
+.list_items {
+    list-style: none;
+    float: left;
+    margin-left: 2vw;
+}
+
+.list_items a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.list_items a:hover {
+    border-bottom: 2px solid white;
+}
+
+.main__bg {
+    height: 80vh;
+    width: 100vw;
+}
+
+.main__content {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    width: 80vw;
+    /* height: 70vh; */
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.container img {
+    width: 45vw;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.container .main__text {
+    margin-left: 7vw;
+    width: 100%;
+    margin-top: 5vh;
+    /* background-color: rgb(196, 235, 245); */
+}
+
+.main__text .text__hello {
+    font-size: 80%;
+    margin-bottom: -20px;
+    color: rgb(92, 91, 91);
+    font-weight: 600;
+}
+
+.main__text .text__name {
+    font-size: 280%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    color: rgb(5, 5, 5);
+    margin-bottom: -20px;
+}
+
+.main__text .text__role {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(24, 24, 24);
+}
+
+.main__text .text__para {
+    margin-top: 5vh;
+    color: rgb(73, 73, 73);
+}
+
+.main__text ul li {
+    list-style: none;
+    color: rgb(73, 73, 73);
+}
+
+.main__text ul li i {
+    padding-right: 10px;
+    color: rgb(73, 73, 73);
+}
+
+.main__text ul li i:hover {
+    color: gray;
+}
+
+.main__text .links {
+    color: rgb(110, 109, 109);
+    padding: 30px;
+}
+
+.main__text .links a {
+    color: rgb(110, 109, 109);
+}
+
+.main__text .links i {
+    font-size: 30px;
+    padding-left: 35px;
+}
+
+.main__text .links i:hover {
+    color: black;
+}
