@@ -53,7 +53,6 @@ body {
     top: 20vh;
     left: 10vw;
     width: 80vw;
-    /* height: 70vh; */
     background-color: white;
     border-radius: 15px;
     padding: 40px;
@@ -62,7 +61,6 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
 }
 
 .container img {
@@ -75,7 +73,6 @@ body {
     margin-left: 7vw;
     width: 100%;
     margin-top: 5vh;
-    /* background-color: rgb(196, 235, 245); */
 }
 
 .main__text .text__hello {
@@ -87,7 +84,6 @@ body {
 
 .main__text .text__name {
     font-size: 280%;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Roboto', sans-serif;
     color: rgb(5, 5, 5);
     margin-bottom: -20px;
