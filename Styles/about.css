@@ -45,14 +45,15 @@ body {
 
 .main__bg {
     height: 80vh;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .main__content {
     position: absolute;
     top: 20vh;
     left: 10vw;
-    width: 80vw;
+    right: 10vw;
+    /* width: 80vw; */
     background-color: white;
     border-radius: 15px;
     padding: 40px;
@@ -64,7 +65,7 @@ body {
 }
 
 .container img {
-    width: 45vw;
+    width: 40vw;
     height: 100%;
     border-radius: 10px;
 }
@@ -130,3 +131,109 @@ body {
 .main__text .links i:hover {
     color: black;
 }
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1201px) {
+    .container img {
+        width: 40vw;
+        height: 80%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    body {
+        font-size: 18px;
+    }
+    .container .main__text {
+        margin-left: 5vw;
+        width: 100%;
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    body {
+        font-size: 15px;
+    }
+    .container img {
+        width: 45vw;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .container .main__text {
+        margin-left: 5vw;
+        width: 100%;
+        margin-top: 1vh;
+    }
+    .main__content {
+        padding: 30px;
+    }
+    .main__text ul {
+        margin-left: -40px;
+    }
+    .main__text .links {
+        padding: 20px 0px;
+    }
+    .main__text .links i {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width:835px) {
+    .container img {
+        width: 45vw;
+        height: 90%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .main__content {
+        position: absolute;
+        top: 18vh;
+        left: 5vw;
+        right: 5vw;
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+    .main__content {
+        padding: 20px;
+    }
+    .container img {
+        width: 50vw;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .container .main__text {
+        margin-left: 3vw;
+        width: 100%;
+    }
+    .main__text .text__hello {
+        margin-bottom: -10px;
+    }
+    .main__text .text__name {
+        font-size: 250%;
+        margin-bottom: -12px;
+    }
+    .main__text .text__para {
+        margin-top: 3vh;
+        color: rgb(73, 73, 73);
+    }
+    .main__text .links i {
+        font-size: 25px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 540px) {}
