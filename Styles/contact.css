@@ -26,7 +26,7 @@
 
 .container {
     position: relative;
-    min-width: 80vw;
+    min-width: 65vw;
     min-height: 70vh;
     background-color: white;
     display: flex;
@@ -36,15 +36,16 @@
 .container .contact__info {
     position: absolute;
     top: 40px;
-    left: 0;
-    width: 350px;
+    left: -130px;
+    width: 340px;
     height: calc(100% - 80px);
     background-color: rgb(19, 19, 78);
     z-index: 1;
-    padding: 60px 40px;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    /* gap: 10vh; */
+    justify-content: space-between;
 }
 
 .contact__info .address__list {
@@ -52,6 +53,12 @@
     height: 50%;
     padding: 10px;
     /* background-color: white; */
+}
+
+.contact__info .address__list .address__heading {
+    color: rgb(250, 232, 200);
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .contact__info .address__list ul li {
@@ -64,7 +71,7 @@
 
 .contact__info ul li {
     list-style: none;
-    color: rgb(252, 226, 178);
+    color: rgb(243, 195, 106);
 }
 
 .contact__info ul li i {
@@ -80,4 +87,18 @@
     float: left;
     padding-right: 25px;
     font-size: 25px;
+}
+
+.contact__info .icons__list ul li i:hover {
+    color: #000;
+}
+
+.contact__form {
+    background-color: teal;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: calc(100% - 300px);
+    height: 100%;
+    padding: 40px;
 }
