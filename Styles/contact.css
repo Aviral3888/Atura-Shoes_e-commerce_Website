@@ -199,4 +199,110 @@ textarea:focus {
     }
 }
 
-@media screen and (max-width: 1040px) {}
+@media screen and (max-width: 1040px) {
+    .container {
+        position: relative;
+        min-width: 70vw;
+        min-height: 70vh;
+        background-color: #e0c7da;
+        display: flex;
+        z-index: 10;
+    }
+    .container .contact__info {
+        left: -100px;
+        width: 250px;
+        padding: 30px 20px 50px 20px;
+        display: flex;
+        font-size: 14px;
+    }
+    .contact__form {
+        position: absolute;
+        top: 0;
+        left: 140px;
+        width: calc(100% - 140px);
+        height: 100%;
+        padding: 30px;
+    }
+    .contact__form__heading {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    input,
+    textarea {
+        width: 40%;
+        margin: 10px;
+        font-size: 14px;
+    }
+    textarea {
+        height: 80px;
+        width: 90%;
+    }
+    button {
+        width: 120px;
+        margin: 40px 20px;
+        border: none;
+        height: 35px;
+    }
+    .home__link {
+        background-color: #501B1D;
+        padding: 6px 15px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        position: relative;
+        min-width: 75vw;
+        min-height: 75vh;
+        background-color: #e0c7da;
+    }
+    .container .contact__info {
+        position: absolute;
+        top: 40px;
+        left: -50px;
+        width: 230px;
+        padding: 40px 20px 60px 20px;
+        font-size: 12px;
+    }
+    .contact__info .icons__list ul {
+        margin-left: 20px;
+    }
+    .contact__info .icons__list ul li i {
+        float: left;
+        padding-right: 13px;
+        font-size: 18px;
+    }
+    .contact__form {
+        left: 180px;
+        width: calc(100% - 180px);
+        height: 100%;
+        padding: 40px 30px;
+    }
+    input,
+    textarea {
+        width: 75%;
+        height: 30px;
+        border-bottom: 1px solid gray;
+        font-size: 13px;
+    }
+    textarea {
+        width: 80%;
+        height: 60px;
+    }
+    button {
+        width: 90px;
+        margin: 10px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .home__link {
+        background-color: #501B1D;
+        padding: 4px 8px;
+    }
+    a {
+        text-decoration: none;
+        margin: 10px;
+        color: rgb(182, 181, 181);
+        font-size: 12px;
+    }
+}
