@@ -11,7 +11,8 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(19, 19, 78);
+    /* background-color: rgb(19, 19, 78); */
+    background-color: #501B1D;
 }
 
 #section::before {
@@ -21,14 +22,15 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: rgb(60, 60, 218);
+    /* background-color: rgb(60, 60, 218); */
+    background-color: #83677B;
 }
 
 .container {
     position: relative;
     min-width: 65vw;
     min-height: 70vh;
-    background-color: white;
+    background-color: #e0c7da;
     display: flex;
     z-index: 10;
 }
@@ -39,7 +41,8 @@
     left: -130px;
     width: 340px;
     height: calc(100% - 80px);
-    background-color: rgb(19, 19, 78);
+    /* background-color: rgb(19, 19, 78); */
+    background-color: #501B1D;
     z-index: 1;
     padding: 50px 40px;
     display: flex;
@@ -94,11 +97,79 @@
 }
 
 .contact__form {
-    background-color: teal;
+    /* background-color: rgb(230, 248, 248); */
     position: absolute;
     top: 0;
     left: 300px;
     width: calc(100% - 300px);
     height: 100%;
     padding: 40px;
+}
+
+.contact__form__heading {
+    margin-left: 20px;
+    color: #501B1D;
+    /* color: rgb(2, 77, 77); */
+    font-size: 25px;
+    font-weight: 600;
+}
+
+form {}
+
+.form__group {
+    width: 100%;
+    /* height: 10vh; */
+}
+
+input,
+textarea {
+    width: 40%;
+    margin: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+    color: #501B1D;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    width: 25%;
+    margin: 20px;
+    background-color: #501B1D;
+    border: none;
+    height: 35px;
+    border-radius: 1px;
+    color: white;
+    font-size: 15px;
+}
+
+.home__link {
+    background-color: #501B1D;
+    padding: 6px 25px;
+}
+
+a {
+    text-decoration: none;
+    margin: 20px;
+    color: gray;
+    font-size: 15px;
+}
+
+a:hover {
+    color: white;
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    height: 80px;
+    width: 90%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
 }
