@@ -1,10 +1,34 @@
+body {
+    margin: 0px;
+}
+
+#sec3 {
+    position: relative;
+    top: -70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#sec3 .site-logo img {
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    width: 70px;
+    position: fixed;
+}
+
+#sec5 {
+    position: relative;
+    top: -70px;
+}
+
 .site-logo {
     width: 30%;
 }
 
 .site-logo img {
-    /* position: fixed;
-    z-index: 1; */
     float: left;
     margin: 40px 0px 20px 100px;
     width: 100px;
@@ -16,9 +40,7 @@
     top: 70px;
     width: 100%;
     height: 70px;
-    /* border: 2px solid grey; */
     background-color: rgb(241, 240, 240);
-    background-color: #E94B3CFF;
 }
 
 #content-menu ul {
@@ -103,7 +125,6 @@
 .body .text {
     margin: 0px 10px;
     padding: 10px;
-    /* border: 2px solid black; */
 }
 
 .body .shoes-heading {
@@ -140,13 +161,11 @@
 }
 
 .body .butt {
-    /* margin: -15px 0px 0px 20px; */
     width: 20%;
     height: 25px;
     border-radius: 2px;
     text-align: center;
     margin: -15px auto 15px auto;
-    /* background-color: rgb(148, 147, 147); */
 }
 
 .body .butt a {
@@ -191,7 +210,6 @@
     position: relative;
     top: 70px;
     margin: 20px;
-    /* border: 2px solid black; */
     display: flex;
 }
 
