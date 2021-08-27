@@ -1,0 +1,363 @@
+body {
+    margin: 0px;
+}
+
+#sec3 {
+    position: relative;
+    top: -70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#sec3 .site-logo img {
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    width: 70px;
+    position: fixed;
+}
+
+#sec5 {
+    position: relative;
+    top: -70px;
+}
+
+.site-logo {
+    width: 30%;
+}
+
+.site-logo img {
+    float: left;
+    margin: 40px 0px 20px 100px;
+    width: 100px;
+    height: auto;
+}
+
+#content-menu {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(241, 240, 240);
+}
+
+#content-menu ul {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#content-menu ul li {
+    list-style-type: none;
+    float: left;
+    margin: 0px 30px;
+}
+
+#content-menu ul li a {
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    color: #2D2926FF;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+#content-menu ul li a:hover {
+    color: #E94B3CFF;
+    border-radius: 5px;
+    background-color: #2D2926FF;
+}
+
+#content-menu .active {
+    background-color: #2D2926FF;
+    color: #E94B3CFF;
+    border-radius: 5px;
+}
+
+
+/* FORMAL SECTION */
+
+.items {
+    height: 200vh;
+    background: linear-gradient(white, rgb(75, 74, 74), white, grey);
+}
+
+.items .body {
+    display: flex;
+    position: relative;
+    top: 70px;
+    margin: 30px;
+}
+
+.body-heading {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.body .item {
+    width: 30%;
+    height: 72vh;
+    background-color: rgb(209, 207, 207);
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+.body .item:hover {
+    box-shadow: 2px 2px 5px rgb(27, 27, 27);
+}
+
+.body .item img {
+    width: 99%;
+    height: 50vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /* height: auto; */
+    margin: 2px;
+}
+
+.body .text {
+    margin: 0px 10px;
+    padding: 10px;
+}
+
+.body .shoes-heading {
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.body .shoes-style {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.body .text .shoes-price {
+    margin: 0px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.body .text .shoes-price span {
+    text-decoration: line-through;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-left: 30px;
+    color: rgb(255, 115, 0);
+}
+
+.body .butt {
+    width: 20%;
+    height: 25px;
+    border-radius: 2px;
+    text-align: center;
+    margin: -15px auto 15px auto;
+}
+
+.body .butt a {
+    margin: 15px 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+}
+
+.body .butt a:hover {
+    font-size: 18px;
+    text-shadow: 1px 1px 8px rgb(59, 59, 59);
+}
+
+
+/* Footer */
+
+#footer-menu {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 10vh;
+    background-color: #2D2926FF;
+    display: flex;
+}
+
+#footer-menu .part1 {
+    width: 100%;
+    color: white;
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* IMAGES DESCRIPTION PAGES */
+
+.shoes-description {
+    position: relative;
+    top: 70px;
+    margin: 20px;
+    display: flex;
+}
+
+.description-images {
+    width: 60%;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.description-images .big img {
+    width: 77%;
+    height: 70vh;
+}
+
+.description-images .big img:hover {
+    border: 1px solid rgb(207, 203, 203);
+}
+
+.description-images .small img {
+    width: 25%;
+    border: 1px solid rgb(207, 203, 203);
+    height: 30vh;
+}
+
+.description-text {
+    /* border: 2px solid Black; */
+    /* margin: ; */
+    width: 40%;
+}
+
+.description-text .des-heading {
+    margin: 40px 10px;
+}
+
+.description-text .des-heading h2 {
+    margin: 20px 0px 0px 0px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.description-text .des-heading h3 {
+    margin-top: 5px;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.description-text .des-heading .price {
+    margin: 0px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.description-text .des-heading .price .fake {
+    margin: 0px 10px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: rgb(71, 71, 71);
+    font-size: 18px;
+}
+
+.description-text .des-heading .price .off {
+    margin: 0px 10px;
+    font-weight: 600;
+    color: rgb(241, 112, 52);
+    font-size: 17px;
+}
+
+.description-text .des-heading .green {
+    color: rgb(19, 172, 19);
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description-text .des-heading .size {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.description-text .des-heading .size .chart {
+    margin-left: 40px;
+    color: rgb(245, 45, 78);
+}
+
+.description-text .des-heading .size-number .num {
+    margin-right: 20px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 55px;
+}
+
+.description-text .des-heading .size-number .num:hover {
+    border: 1px solid rgb(245, 45, 78);
+    cursor: pointer;
+}
+
+.description-text .des-heading #des-btn {
+    margin-top: 40px;
+    padding: 8px 10px;
+    width: 40%;
+    background-color: rgb(214, 40, 69);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.description-text .des-heading #des-btn:hover {
+    background-color: rgb(243, 60, 90);
+}
+
+.description-text .des-content {
+    margin: 40px 10px;
+}
+
+.description-text .des-content h3 {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.description-text .des-content .pro-code {
+    margin-top: 60px;
+}
+
+.description-text .des-content .pro-code h3 {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(66, 65, 65);
+}
+
+.description-text .des-content .pro-code h3 span {
+    margin: 0px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+}
+
+.description-text .des-content .pro-code p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}

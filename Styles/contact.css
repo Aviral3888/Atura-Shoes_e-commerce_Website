@@ -41,13 +41,11 @@
     left: -130px;
     width: 340px;
     height: calc(100% - 80px);
-    /* background-color: rgb(19, 19, 78); */
     background-color: #501B1D;
     z-index: 1;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    /* gap: 10vh; */
     justify-content: space-between;
 }
 
@@ -55,7 +53,6 @@
     width: 100%;
     height: 50%;
     padding: 10px;
-    /* background-color: white; */
 }
 
 .contact__info .address__list .address__heading {
@@ -79,7 +76,6 @@
 
 .contact__info ul li i {
     font-size: 20px;
-    /* font-weight: normal; */
 }
 
 .contact__info .icons__list ul {
@@ -97,7 +93,6 @@
 }
 
 .contact__form {
-    /* background-color: rgb(230, 248, 248); */
     position: absolute;
     top: 0;
     left: 300px;
@@ -109,16 +104,12 @@
 .contact__form__heading {
     margin-left: 20px;
     color: #501B1D;
-    /* color: rgb(2, 77, 77); */
     font-size: 25px;
     font-weight: 600;
 }
 
-form {}
-
 .form__group {
     width: 100%;
-    /* height: 10vh; */
 }
 
 input,
@@ -140,7 +131,7 @@ button {
     border: none;
     height: 35px;
     border-radius: 1px;
-    color: white;
+    color: rgb(243, 195, 106);
     font-size: 15px;
 }
 
@@ -152,12 +143,12 @@ button {
 a {
     text-decoration: none;
     margin: 20px;
-    color: gray;
+    color: rgb(182, 181, 181);
     font-size: 15px;
 }
 
 a:hover {
-    color: white;
+    color: rgb(243, 195, 106);
 }
 
 input {
@@ -172,4 +163,146 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width: 1240px) {
+    .container .contact__info {
+        left: -130px;
+        width: 300px;
+        padding: 40px 25px;
+    }
+    .contact__info .address__list .address__heading {
+        color: rgb(250, 232, 200);
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .contact__info ul li i {
+        font-size: 18px;
+    }
+    .contact__info .address__list ul li {
+        padding-bottom: 20px;
+    }
+    .contact__info .address__list ul li i {
+        padding-right: 5px;
+    }
+    .contact__info .icons__list ul li i {
+        float: left;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    .contact__form {
+        left: 150px;
+        width: calc(100% - 150px);
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container {
+        position: relative;
+        min-width: 70vw;
+        min-height: 70vh;
+        background-color: #e0c7da;
+        display: flex;
+        z-index: 10;
+    }
+    .container .contact__info {
+        left: -100px;
+        width: 250px;
+        padding: 30px 20px 50px 20px;
+        display: flex;
+        font-size: 14px;
+    }
+    .contact__form {
+        position: absolute;
+        top: 0;
+        left: 140px;
+        width: calc(100% - 140px);
+        height: 100%;
+        padding: 30px;
+    }
+    .contact__form__heading {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    input,
+    textarea {
+        width: 40%;
+        margin: 10px;
+        font-size: 14px;
+    }
+    textarea {
+        height: 80px;
+        width: 90%;
+    }
+    button {
+        width: 120px;
+        margin: 40px 20px;
+        border: none;
+        height: 35px;
+    }
+    .home__link {
+        background-color: #501B1D;
+        padding: 6px 15px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        position: relative;
+        min-width: 75vw;
+        min-height: 75vh;
+        background-color: #e0c7da;
+    }
+    .container .contact__info {
+        position: absolute;
+        top: 40px;
+        left: -50px;
+        width: 230px;
+        padding: 40px 20px 60px 20px;
+        font-size: 12px;
+    }
+    .contact__info .icons__list ul {
+        margin-left: 20px;
+    }
+    .contact__info .icons__list ul li i {
+        float: left;
+        padding-right: 13px;
+        font-size: 18px;
+    }
+    .contact__form {
+        left: 180px;
+        width: calc(100% - 180px);
+        height: 100%;
+        padding: 40px 30px;
+    }
+    input,
+    textarea {
+        width: 75%;
+        height: 30px;
+        border-bottom: 1px solid gray;
+        font-size: 13px;
+    }
+    textarea {
+        width: 80%;
+        height: 60px;
+    }
+    button {
+        width: 90px;
+        margin: 10px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .home__link {
+        background-color: #501B1D;
+        padding: 4px 8px;
+    }
+    a {
+        text-decoration: none;
+        margin: 10px;
+        color: rgb(182, 181, 181);
+        font-size: 12px;
+    }
 }
